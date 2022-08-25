@@ -1,7 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
+}
+
+.timer__container {
+  border: 1px solid lightgray;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__container p {
+  margin: 10px 0;
+}
+
+.timer__btn {
+  margin: 0 5px;
+  padding: 4px;
 }
