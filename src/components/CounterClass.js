@@ -23,7 +23,7 @@ class CounterClass extends Component {
   };
 
   componentDidUpdate() {
-    if (this.state.hasAlert) alert(this.state.counter);
+    if (this.state.hasAlert) alert(this.props.counter);
   }
 
   render() {

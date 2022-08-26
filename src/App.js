@@ -1,4 +1,6 @@
 import './App.css';
+import BuyStockClass from './components/BuyStockClass';
+import BuyStockFn from './components/BuyStockFn';
 import CounterClass from './components/CounterClass';
 import CounterFn from './components/CounterFn';
 import TimerClass from './components/TimerClass';
@@ -11,6 +13,8 @@ function App() {
       <TimerFn />
       <CounterClass />
       <CounterFn />
+      <BuyStockClass />
+      <BuyStockFn />
     </div>
   );
 }
