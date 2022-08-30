@@ -6,12 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { legacy_createStore } from "redux";
 import { rootReducer } from "./reducers/rootReducer";
+import { myCreateStore } from "./MyRedux/MyRedux";
 
-const store = legacy_createStore(rootReducer);
+// const store = legacy_createStore(rootReducer);
+const myStore = myCreateStore(rootReducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
+  <Provider store={myStore}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
